@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+<package extends="struts-default" name="struts-tests">
+
+<action name="person-*" class="userLogin" method="{1}">
+<result name="{1}">WEB-INF/pages/login.jsp</result>
+<result name="registerpage">WEB-INF/pages/register.jsp</result>
+<result name="yexinIndex">WEB-INF/pages/YexinMainPanel.jsp</result>
+</action>
+
+<action name="UserAction-*" class="userAction" method="{1}">
+<result name="input">WEB-INF/pages/register.jsp</result>
+<result name="errorCode">WEB-INF/pages/register.jsp</result>
+<result name="loginPage">WEB-INF/pages/login.jsp</result>
+<result name="yexinIndex">WEB-INF/pages/YexinMainPanel.jsp</result>
+</action>
+
+<action name="UserExtraAction-*" class="userExtraAction" method="{1}">
+<interceptor-ref name="tokenSession">
+</interceptor-ref>
+<interceptor-ref name="defaultStack"></interceptor-ref>
+<result name="invalid.token">WEB-INF/pages/test.jsp</result>
+<result name="input">WEB-INF/pages/register.jsp</result>
+<result name="registSuccess">WEB-INF/pages/registerSuccess.jsp</result>
+</action>
+
+<action name="ValidateCodeAction" class="validateCodeAction">
+</action>
+
+
+<action name="product-*" class="productAction" method="{1}">
+<result name="findByCid">WEB-INF/pages/productList.jsp</result>
+<result name="detailProduct">WEB-INF/pages/detailProduct.jsp</result>
+</action>
+
+
+<action name="cart-*" class="cartAction" method="{1}">
+<result name="cartPage">WEB-INF/pages/usersCart.jsp</result>
+</action>
+
+
+<action name="cartAddItem-*" class="catAddItem" method="{1}">
+<interceptor-ref name="token"></interceptor-ref>
+<interceptor-ref name="defaultStack"></interceptor-ref>
+<result name="invalid.token">WEB-INF/pages/usersCart.jsp</result>
+<result name="cartPage">WEB-INF/pages/usersCart.jsp</result>
+</action>
+ </package>
+</struts>

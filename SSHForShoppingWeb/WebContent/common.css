@@ -1,0 +1,105 @@
+body{
+	margin: 0 auto;
+	width:1150px;
+}
+.hotspan{
+	width:25px;
+	height:13px;
+	border:#FF4400 1px solid;
+	color: #FF4400;
+	font-size: 10px;
+	float:right;
+}
+.nothotspan{
+	width:25px;
+	height:13px;
+	border:gray 1px solid;
+	color: gray;
+	font-size: 10px;
+	float:right;
+}
+.monthsalespan{
+	float:left;
+	width:50%;
+	height:13px;
+	font-size: 10px;
+}
+
+.divproduct{
+	width:200px;
+	height: 340px;
+	margin-left:20px;
+	margin-top:3px;
+	float: left;
+	border:1px gray solid;
+}
+.divpimg{
+	width:100%;
+	height: 170px;
+}
+.divpsimg{
+	width:30px;
+	height: 30px;
+	margin-top: 1px;
+}
+.divdf{
+	width:40px;
+	height: 17px;
+	margin-top: 1px;
+	background-color: #FF4400;
+	float:left;
+}
+.category{
+	width:1150px;
+	height: 100%;
+}
+.ddstyle{
+	display:inline-block;
+	margin-left:4px;
+}
+.divcategory{
+	width:230px;
+	height: 100%;
+	float:left;
+	border:1px red solid;
+	margin-top:3px;
+}
+.divcategoryP{
+	margin-left:1px;
+	width:915px;
+	height:100%;
+	float:left;
+	border:1px red solid;
+}
+.pagedir{
+	width:300px;
+	height:100%;
+	border:1px red solid;
+	float:right;
+}
+.pagespan{
+	float:right;
+	margin-right: 30px;
+	border:#FF4400 1px solid;
+}
+a.a1:HOVER {
+	color:#FF4400;
+	text-decoration: none;
+}
+a.a1:LINK {
+	color: #FF4400;
+	text-decoration: none;
+}
+a.a1:VISITED {
+	text-decoration: none;
+	color:#FF4400;
+}
+a.apage:LINK {
+	color: gray;
+	font-size:x-large;
+	text-decoration: none;
+}
+a.apage:HOVER {
+	color: #FF4400;
+	text-decoration: none;
+}
